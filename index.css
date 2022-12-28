@@ -69,3 +69,8 @@ body{
     cursor: pointer;
     font-weight: 700;
 }
+
+
+@media (max-width: 400px){
+    font-size: 13px;
+}
