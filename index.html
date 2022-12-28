@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Read More</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="cardbox">
+        <div class="imgbox">
+            <img src="https://apprendre-la-photo.fr/wp-content/uploads/2015/09/stockholm.jpg" alt="">
+        </div>
+        <div class="content">
+            <div id="short" >
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore maiores itaque....
+            </div>
+            <div id="long" >
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore maiores itaque officia, consequatur perferendis soluta neque harum error in adipisci repellat numquam assumenda eligendi reiciendis quis sint eaque at deleniti?
+            </div>
+        </div>
+        <div id="readmore">
+            Read more
+        </div>
+    </div>
+    <script>
+        let readmore = document.getElementById("readmore");
+        let short = document.getElementById("short");
+        let long = document.getElementById("long");
+        readmore.addEventListener("click" , togglecontent);
+        function togglecontent(){
+            short.classList.toggle("hideshort");
+            long.classList.toggle("hidelong");
+
+            if (readmore.innerText ==="Read more") {
+                readmore.innerText ="Read few";
+            }
+            else{
+                readmore.innerText ="Read more";
+            }
+        }
+    </script>
+</body>
+</html>
